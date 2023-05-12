@@ -9,6 +9,8 @@ pip install wes-palette
 
 ## Examples
 
+![wes anderson palettes](palettes.png)
+
 ## Basic Usage
 
 ## Contributing
