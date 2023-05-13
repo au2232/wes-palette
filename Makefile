@@ -15,7 +15,7 @@ install:  ## install library
 #########
 lint:  ## run static analysis with flake8
 	python -m black --check wes_palette setup.py
-	python -m flake8 wes_palette/ setup.py
+	python -m flake8 wes_palette setup.py
 
 # Alias
 lints: lint
