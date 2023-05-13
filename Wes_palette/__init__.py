@@ -1,1 +1,1 @@
-from .wesplot import *
+#from .wes_palette import *
