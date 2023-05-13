@@ -33,7 +33,6 @@ palettes = {
 # avoid plotly import if not using
 plotly_palettes = {k: list(map(list, zip(np.linspace(0, 1, len(palettes[k])), palettes[k]))) for k in palettes}
 
-
 def available(show=True):
     if not show:
         return palettes.keys()
