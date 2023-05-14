@@ -39,7 +39,7 @@ annotate:  ## run type checking
 # TESTS #
 #########
 test: ## clean and run unit tests
-	python3 -m pytest -v wes_palette/tests
+	python3 -m pytest -v tests
 
 coverage:  ## clean and run unit tests with coverage
 	python3 -m pytest -v wes_palette/tests --cov=example_project_python --cov-branch --cov-fail-under=75 --cov-report term-missing
