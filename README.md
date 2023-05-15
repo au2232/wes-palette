@@ -62,6 +62,8 @@ Create your graph with matplotlib and then display the plot:
     plt.show()
     
 ![example](examplegraph1.png)
+![example](examplegraph2.png)
+![example](examplegraph3.png)
 
 ## Contributing
 
