@@ -11,7 +11,7 @@ name = "wes_palette"
 authors = [{name = "AU", email = "au2232@columbia.edu"}]
 description="Wes Anderson film color palette extension for matplotlib"
 readme = "README.md"
-version = "0.1.0"
+version = "0.1.1"
 requires-python = ">=3.7"
 
 dependencies = []
