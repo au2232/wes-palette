@@ -62,8 +62,10 @@ def available(show=True):
 
 def check_key(palname):
     """Check if palette is in palette list.
-	Args:
-		palname: palette name
+	#Args:
+	#	palname: palette name
+	#Returns:
+	#	Tries color palette or raises error
 	Raises:
 		KeyError: An error occurs when the palette name is new.
 	Examples:
@@ -81,10 +83,10 @@ def check_key(palname):
 
 def cmap(palname):
     """Check if palette is vaild and make a colormap from it.
-	Args:
-		palname: palette name 
-	Returns:
-		matplotlib colormap
+	#Args:
+	#	palname: palette name 
+	#Returns:
+	#	matplotlib colormap
 	Examples:
 		#>>> cmap("megasaki")
 		#<matplotlib.colors.ListedColormap object at > 
