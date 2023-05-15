@@ -3,6 +3,11 @@ graft wes_palette
 include LICENSE
 include README.md
 
+include *.md
+include *.png
+include *.yaml
+recursive-include tests *.png
+
 include .bumpversion.cfg
 include pyproject.toml
 include Makefile
