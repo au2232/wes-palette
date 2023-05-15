@@ -7,31 +7,31 @@ import numpy as np
 
 
 palettes = {
-   # "":["#","#"],
-    "megasaki":["#aa82a7","#9d2f28","#deb867","#e3ced3","#948580","#110d0e"],
-    "budapest":["#4B0100","#900403","#4E1042","#806150","#C76B4F","#D8AA88"],
-    "kingdom":["#195B4E","#617337","#B1A16A","#E1D06E","#C99A6B","#B27B7F"],
-    "darjeeling":["#0D6CE8","#8ACAF0","#ABBBC7","#687075","#3B5657","#B45E3B"],
-    "tenenbaums":["#a7ba42","#95ccba","#ffdede","#fff0cb","#f2cc84"],
-    "tracy":["#eaa2b6","#e7cbaf","#e0bd59","#292176"],
-    "dispatch":["#1f5c89","#72a87c","#c0bc78","#ce784b"],
-    "darjeeling2":["#ffe959","#b5b867","#b7dbdb","#6ba08f","#345b8e"],
-    "fantasticfox":["#4baecb","#e4d405","#df8818","#b40c24","#272121"],
-    "mendls":["#3a0202","#a03558","#b25d55","#7896d7","#dc90b5","#e0e2f4"],
-
-    #"vaporwave": ["#94D0FF", "#8795E8", "#966bff", "#AD8CFF", "#C774E8", "#c774a9", "#FF6AD5", "#ff6a8b", "#ff8b8b", "#ffa58b", "#ffde8b", "#cdde8b", "#8bde8b", "#20de8b"],
-    #"cool": ["#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF"],
-    #"crystal_pepsi": ["#FFCCFF", "#F1DAFF", "#E3E8FF", "#CCFFFF"],
-    #"mallsoft": ["#fbcff3", "#f7c0bb", "#acd0f4", "#8690ff", "#30bfdd", "#7fd4c1"],
-    #"jazzcup": ["#392682", "#7a3a9a", "#3f86bc", "#28ada8", "#83dde0"],
-    #"sunset": ["#661246", "#ae1357", "#f9247e", "#d7509f", "#f9897b"],
-    #"macplus": ["#1b4247", "#09979b", "#75d8d5", "#ffc0cb", "#fe7f9d", "#65323e"],
-    #"seapunk": ["#532e57", "#a997ab", "#7ec488", "#569874", "#296656"],
-    #"avanti": ["#FB4142", "#94376C", "#CE75AD", "#76BDCF", "#9DCFF0"]
+    # "":["#","#"],
+    "megasaki": ["#aa82a7", "#9d2f28", "#deb867", "#e3ced3", "#948580", "#110d0e"],
+    "budapest": ["#4B0100", "#900403", "#4E1042", "#806150", "#C76B4F", "#D8AA88"],
+    "kingdom": ["#195B4E", "#617337", "#B1A16A", "#E1D06E", "#C99A6B", "#B27B7F"],
+    "darjeeling": ["#0D6CE8", "#8ACAF0", "#ABBBC7", "#687075", "#3B5657", "#B45E3B"],
+    "tenenbaums": ["#a7ba42", "#95ccba", "#ffdede", "#fff0cb", "#f2cc84"],
+    "tracy": ["#eaa2b6", "#e7cbaf", "#e0bd59", "#292176"],
+    "dispatch": ["#1f5c89", "#72a87c", "#c0bc78", "#ce784b"],
+    "darjeeling2": ["#ffe959", "#b5b867", "#b7dbdb", "#6ba08f", "#345b8e"],
+    "fantasticfox": ["#4baecb", "#e4d405", "#df8818", "#b40c24", "#272121"],
+    "mendls": ["#3a0202", "#a03558", "#b25d55", "#7896d7", "#dc90b5", "#e0e2f4"],
+    # "vaporwave": ["#94D0FF", "#8795E8", "#966bff", "#AD8CFF", "#C774E8", "#c774a9", "#FF6AD5", "#ff6a8b", "#ff8b8b", "#ffa58b", "#ffde8b", "#cdde8b", "#8bde8b", "#20de8b"],
+    # "cool": ["#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF"],
+    # "crystal_pepsi": ["#FFCCFF", "#F1DAFF", "#E3E8FF", "#CCFFFF"],
+    # "mallsoft": ["#fbcff3", "#f7c0bb", "#acd0f4", "#8690ff", "#30bfdd", "#7fd4c1"],
+    # "jazzcup": ["#392682", "#7a3a9a", "#3f86bc", "#28ada8", "#83dde0"],
+    # "sunset": ["#661246", "#ae1357", "#f9247e", "#d7509f", "#f9897b"],
+    # "macplus": ["#1b4247", "#09979b", "#75d8d5", "#ffc0cb", "#fe7f9d", "#65323e"],
+    # "seapunk": ["#532e57", "#a997ab", "#7ec488", "#569874", "#296656"],
+    # "avanti": ["#FB4142", "#94376C", "#CE75AD", "#76BDCF", "#9DCFF0"]
 }
 
 # avoid plotly import if not using
 plotly_palettes = {k: list(map(list, zip(np.linspace(0, 1, len(palettes[k])), palettes[k]))) for k in palettes}
+
 
 def available(show=True):
     if not show:
@@ -53,7 +53,9 @@ def check_key(palname):
     try:
         palettes[palname]
     except KeyError:
-        raise KeyError("{} not an accepted palette name. Check vapeplot.available() for available palettes".format(palname))
+        raise KeyError(
+            "{} not an accepted palette name. Check vapeplot.available() for available palettes".format(palname)
+        )
 
 
 def cmap(palname):
@@ -92,8 +94,8 @@ def reverse(palname):
 
 
 def set_palette(palname):
-        check_key(palname)
-        rcParams['axes.prop_cycle'] = cycler.cycler(color=palettes[palname])
+    check_key(palname)
+    rcParams['axes.prop_cycle'] = cycler.cycler(color=palettes[palname])
 
 
 def view_palette(*args):
