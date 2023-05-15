@@ -53,7 +53,7 @@ Create your graph with matplotlib and then display the plot:
     f, ax = plt.subplots(figsize=(11, 9))
 
     # Generate a custom diverging colormap
-    cmap = wes.cmap('budapest')
+    cmap = wes.cmap('dispatch')
 
     # Draw the heatmap with the mask and correct aspect ratio
     sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
