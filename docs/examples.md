@@ -16,7 +16,15 @@ Create your graph with matplotlib and then display the plot:
     
     plt.show()
 
-## Example
+## Import requirements
+
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    import wes_palette as wes
+
+## Examples using seaborn
+
+## Example 1: Heatmap
 
     # Create a visualization
     sns.set_theme(style="white")
@@ -44,8 +52,39 @@ Create your graph with matplotlib and then display the plot:
 
     plt.show()
     
-![example](examplegraph1.png)
-![example](examplegraph2.png)
-![example](examplegraph3.png)
+![example](heatmap.png)
 
+## Example 2: Displot
+
+    sns.set_theme(style="whitegrid")
+
+    # Load the diamonds dataset
+    diamonds = sns.load_dataset("diamonds")
+
+    # Set color palette
+    palette = wes.palette('mendls')
+
+    # Plot the distribution of clarity ratings, conditional on carat
+    sns.displot(
+        data=diamonds,
+        x="carat", hue="cut",
+        kind="kde", height=6,
+        multiple="fill", clip=(0, None),
+        palette=palette,
+    )
+    plt.show()
+
+![example](displot.png)
+
+## Example 3: Pair plot
+    palette=wes.palette('tracy')
+
+    sns.set_theme(style="ticks")
+
+    df = sns.load_dataset("penguins")
+    sns.pairplot(df, hue="species", palette=palette)
+
+    plt.show()
+
+![example](pairplot.png)
 
