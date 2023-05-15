@@ -390,8 +390,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#import-requirements" class="md-nav__link">
+    Import requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-using-seaborn" class="md-nav__link">
+    Examples using seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-heatmap" class="md-nav__link">
+    Example 1: Heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-displot" class="md-nav__link">
+    Example 2: Displot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3-pair-plot" class="md-nav__link">
+    Example 3: Pair plot
   </a>
   
 </li>
@@ -488,8 +516,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#import-requirements" class="md-nav__link">
+    Import requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-using-seaborn" class="md-nav__link">
+    Examples using seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-heatmap" class="md-nav__link">
+    Example 1: Heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-displot" class="md-nav__link">
+    Example 2: Displot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3-pair-plot" class="md-nav__link">
+    Example 3: Pair plot
   </a>
   
 </li>
@@ -526,7 +582,13 @@
 <p>Create your graph with matplotlib and then display the plot:</p>
 <pre><code>plt.show()
 </code></pre>
-<h2 id="example">Example</h2>
+<h2 id="import-requirements">Import requirements</h2>
+<pre><code>import seaborn as sns
+import matplotlib.pyplot as plt
+import wes_palette as wes
+</code></pre>
+<h2 id="examples-using-seaborn">Examples using seaborn</h2>
+<h2 id="example-1-heatmap">Example 1: Heatmap</h2>
 <pre><code># Create a visualization
 sns.set_theme(style="white")
 
@@ -553,9 +615,38 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 
 plt.show()
 </code></pre>
-<p><img alt="example" src="../examplegraph1.png" />
-<img alt="example" src="../examplegraph2.png" />
-<img alt="example" src="../examplegraph3.png" /></p>
+<p><img alt="example" src="../heatmap.png" /></p>
+<h2 id="example-2-displot">Example 2: Displot</h2>
+<pre><code>sns.set_theme(style="whitegrid")
+
+# Load the diamonds dataset
+diamonds = sns.load_dataset("diamonds")
+
+# Set color palette
+palette = wes.palette('mendls')
+
+# Plot the distribution of clarity ratings, conditional on carat
+sns.displot(
+    data=diamonds,
+    x="carat", hue="cut",
+    kind="kde", height=6,
+    multiple="fill", clip=(0, None),
+    palette=palette,
+)
+plt.show()
+</code></pre>
+<p><img alt="example" src="../displot.png" /></p>
+<h2 id="example-3-pair-plot">Example 3: Pair plot</h2>
+<pre><code>palette=wes.palette('tracy')
+
+sns.set_theme(style="ticks")
+
+df = sns.load_dataset("penguins")
+sns.pairplot(df, hue="species", palette=palette)
+
+plt.show()
+</code></pre>
+<p><img alt="example" src="../pairplot.png" /></p>
 
 
 
