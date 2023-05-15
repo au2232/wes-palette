@@ -1,0 +1,2605 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="matplotlib color palette extension">
+      
+      
+      
+        <link rel="canonical" href="https://au2232.github.io/wes_palette/reference/">
+      
+      
+        <link rel="prev" href="../examples/">
+      
+      
+        <link rel="next" href="../contributing/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
+    
+    
+      
+        <title>Reference - Wes Palette Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wes_palette.wes_palette" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Wes Palette Docs" class="md-header__button md-logo" aria-label="Wes Palette Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wes Palette Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/au2232/wes_palette" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    au2232/wes_palette
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Wes Palette Docs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../overview/" class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../license/" class="md-tabs__link">
+      License
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../installation/" class="md-tabs__link">
+      Installation
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../examples/" class="md-tabs__link">
+      Usage Examples
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Reference
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../contributing/" class="md-tabs__link">
+      Contributing
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../code_of_conduct/" class="md-tabs__link">
+      Code of Conduct
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Wes Palette Docs" class="md-nav__button md-logo" aria-label="Wes Palette Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Wes Palette Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/au2232/wes_palette" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    au2232/wes_palette
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Wes Palette Docs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Usage Examples
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reference
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette" class="md-nav__link">
+    wes_palette.wes_palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.available" class="md-nav__link">
+    available()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.check_key" class="md-nav__link">
+    check_key()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap" class="md-nav__link">
+    cmap()
+  </a>
+  
+    <nav class="md-nav" aria-label="cmap()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap--cmapmegasaki" class="md-nav__link">
+    &gt;&gt;&gt; cmap("megasaki")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap--_1" class="md-nav__link">
+    
+
+
+
+
+
+  
+  
+      Provide several color palettes for matplotlib.
+This module allows the user to easily change default color palettes in matplotlib.
+This module contains the followinng functions:
+
+'available(show=True)' - Returns a visual of all available color palettes.
+'check_key(palname)' - Check if palette name is in available palettes
+'cmap(palname)' - Return matplotlib color map of palette
+'despine(ax, all=False)' - Removes axis labels from graph
+'font_size(s)' - Set font size
+'palette(palname=None)' - Return all palettes if no palname; otherwise check and return palname from palette
+'reverse(palname)' -  Reverse color order
+'set_palette(palname)' - Set palette
+'view_palette(*args)' - View color palette
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+available(show=True)
+
+
+
+
+  
+  
+      Output graphs of all available color palettes.
+
+      
+        Source code in wes_palette/wes_palette.py
+        46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60def available(show=True):
+    &quot;&quot;&quot;Output graphs of all available color palettes.&quot;&quot;&quot;
+    if not show:
+        return palettes.keys()
+    else:
+        f, ax = plt.subplots(5, 2, figsize=(5, 8))
+        for i, name in enumerate(palettes.keys()):
+            x, y = i // 2, i % 2
+            cycle = palettes[name]
+            for j, c in enumerate(cycle):
+                ax[x, y].hlines(j, 0, 1, colors=c, linewidth=15)
+            ax[x, y].set_ylim(-1, len(cycle))
+            ax[x, y].set_title(name)
+            despine(ax[x, y], True)
+        plt.show()
+
+      
+  
+
+
+
+
+
+
+
+
+check_key(palname)
+
+
+
+
+  
+  
+      Check if palette is in palette list.
+
+  Parameters:
+  
+    
+      
+        Name
+        Type
+        Description
+        Default
+      
+    
+    
+        
+          palname
+          
+          
+          palette name
+          
+              required
+          
+        
+    
+  
+
+  Raises:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+                KeyError
+          
+          An error occurs when the palette name is new.
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; check_key(&quot;megasaki&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79def check_key(palname):
+    &quot;&quot;&quot;Check if palette is in palette list.
+	Args:
+		palname: palette name
+	Raises:
+		KeyError: An error occurs when the palette name is new.
+	Examples:
+		&gt;&gt;&gt; check_key(&quot;megasaki&quot;)
+
+    &quot;&quot;&quot;
+
+    try:
+        palettes[palname]
+    except KeyError:
+        raise KeyError(
+            &quot;{} not an accepted palette name. Check vapeplot.available() for available palettes&quot;.format(palname)
+        )
+
+      
+  
+
+
+
+
+
+
+
+
+cmap(palname)
+
+
+
+
+  
+  
+      Check if palette is vaild and make a colormap from it.
+
+  Parameters:
+  
+    
+      
+        Name
+        Type
+        Description
+        Default
+      
+    
+    
+        
+          palname
+          
+          
+          palette name 
+          
+              required
+          
+        
+    
+  
+
+  Returns:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+          
+          matplotlib colormap
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; cmap("megasaki")
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94def cmap(palname):
+    &quot;&quot;&quot;Check if palette is vaild and make a colormap from it.
+	Args:
+		palname: palette name 
+	Returns:
+		matplotlib colormap
+	Examples:
+		#&gt;&gt;&gt; cmap(&quot;megasaki&quot;)
+		#&lt;matplotlib.colors.ListedColormap object at &gt; 
+    &quot;&quot;&quot;
+
+    check_key(palname)
+    return matplotlib.colors.ListedColormap(palettes[palname])
+
+      
+  
+
+
+
+
+
+
+
+
+despine(ax, all=False)
+
+
+
+
+  
+  
+      Remove axis labels from graph.
+
+Examples:
+    &gt;&gt;&gt; despine(ax, True)
+
+      
+        Source code in wes_palette/wes_palette.py
+         97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112def despine(ax, all=False):
+    &quot;&quot;&quot;Remove axis labels from graph.
+	Examples:
+		#&gt;&gt;&gt; despine(ax, True)
+
+    &quot;&quot;&quot;
+    if all is True:
+        for sp in ax.spines:
+            ax.spines[sp].set_visible(False)
+        ax.get_xaxis().set_visible(False)
+        ax.get_yaxis().set_visible(False)
+    else:
+        ax.spines[&#39;top&#39;].set_visible(False)
+        ax.spines[&#39;right&#39;].set_visible(False)
+        ax.get_xaxis().tick_bottom()
+        ax.get_yaxis().tick_left()
+
+      
+  
+
+
+
+
+
+
+
+
+font_size(s)
+
+
+
+
+  
+  
+      Set font size.i
+
+Examples:
+    &gt;&gt;&gt; font_size(11)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        115
+116
+117
+118
+119
+120
+121def font_size(s):
+    &quot;&quot;&quot;Set font size.i
+	Examples:
+		&gt;&gt;&gt; font_size(11)
+
+    &quot;&quot;&quot;
+    matplotlib.rcParams.update({&#39;font.size&#39;: s})
+
+      
+  
+
+
+
+
+
+
+
+
+palette(palname=None)
+
+
+
+
+  
+  
+      If no argument, return list of palettes. 
+Otherwise check the palette name and return the palette.
+ Examples:
+         &gt;&gt;&gt; palette()
+         {'megasaki': ['#aa82a7', '#9d2f28', '#deb867', '#e3ced3', '#948580', '#110d0e'], 'budapest': ['#4B0100', '#900403', '#4E1042', '#806150', '#C76B4F', '#D8AA88'], 'kingdom': ['#195B4E', '#617337', '#B1A16A', '#E1D06E', '#C99A6B', '#B27B7F'], 'darjeeling': ['#0D6CE8', '#8ACAF0', '#ABBBC7', '#687075', '#3B5657', '#B45E3B'], 'tenenbaums': ['#a7ba42', '#95ccba', '#ffdede', '#fff0cb', '#f2cc84'], 'tracy': ['#eaa2b6', '#e7cbaf', '#e0bd59', '#292176'], 'dispatch': ['#1f5c89', '#72a87c', '#c0bc78', '#ce784b'], 'darjeeling2': ['#ffe959', '#b5b867', '#b7dbdb', '#6ba08f', '#345b8e'], 'fantasticfox': ['#4baecb', '#e4d405', '#df8818', '#b40c24', '#272121'], 'mendls': ['#3a0202', '#a03558', '#b25d55', '#7896d7', '#dc90b5', '#e0e2f4']}
+
+      
+        Source code in wes_palette/wes_palette.py
+        124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135def palette(palname=None):
+    &quot;&quot;&quot;If no argument, return list of palettes. 
+       Otherwise check the palette name and return the palette.
+	Examples:
+		&gt;&gt;&gt; palette()
+		{&#39;megasaki&#39;: [&#39;#aa82a7&#39;, &#39;#9d2f28&#39;, &#39;#deb867&#39;, &#39;#e3ced3&#39;, &#39;#948580&#39;, &#39;#110d0e&#39;], &#39;budapest&#39;: [&#39;#4B0100&#39;, &#39;#900403&#39;, &#39;#4E1042&#39;, &#39;#806150&#39;, &#39;#C76B4F&#39;, &#39;#D8AA88&#39;], &#39;kingdom&#39;: [&#39;#195B4E&#39;, &#39;#617337&#39;, &#39;#B1A16A&#39;, &#39;#E1D06E&#39;, &#39;#C99A6B&#39;, &#39;#B27B7F&#39;], &#39;darjeeling&#39;: [&#39;#0D6CE8&#39;, &#39;#8ACAF0&#39;, &#39;#ABBBC7&#39;, &#39;#687075&#39;, &#39;#3B5657&#39;, &#39;#B45E3B&#39;], &#39;tenenbaums&#39;: [&#39;#a7ba42&#39;, &#39;#95ccba&#39;, &#39;#ffdede&#39;, &#39;#fff0cb&#39;, &#39;#f2cc84&#39;], &#39;tracy&#39;: [&#39;#eaa2b6&#39;, &#39;#e7cbaf&#39;, &#39;#e0bd59&#39;, &#39;#292176&#39;], &#39;dispatch&#39;: [&#39;#1f5c89&#39;, &#39;#72a87c&#39;, &#39;#c0bc78&#39;, &#39;#ce784b&#39;], &#39;darjeeling2&#39;: [&#39;#ffe959&#39;, &#39;#b5b867&#39;, &#39;#b7dbdb&#39;, &#39;#6ba08f&#39;, &#39;#345b8e&#39;], &#39;fantasticfox&#39;: [&#39;#4baecb&#39;, &#39;#e4d405&#39;, &#39;#df8818&#39;, &#39;#b40c24&#39;, &#39;#272121&#39;], &#39;mendls&#39;: [&#39;#3a0202&#39;, &#39;#a03558&#39;, &#39;#b25d55&#39;, &#39;#7896d7&#39;, &#39;#dc90b5&#39;, &#39;#e0e2f4&#39;]}
+    &quot;&quot;&quot;
+    if palname is None:
+        return palettes
+    else:
+        check_key(palname)
+        return palettes[palname]
+
+      
+  
+
+
+
+
+
+
+
+
+reverse(palname)
+
+
+
+
+  
+  
+      Reverse color order of specfied palette.
+
+Examples:
+    &gt;&gt;&gt; reverse("budapest")
+['#D8AA88', '#C76B4F', '#806150', '#4E1042', '#900403', '#4B0100']
+
+      
+        Source code in wes_palette/wes_palette.py
+        138
+139
+140
+141
+142
+143
+144
+145def reverse(palname):
+    &quot;&quot;&quot;Reverse color order of specfied palette.
+	Examples:
+		#&gt;&gt;&gt; reverse(&quot;budapest&quot;)
+		#[&#39;#D8AA88&#39;, &#39;#C76B4F&#39;, &#39;#806150&#39;, &#39;#4E1042&#39;, &#39;#900403&#39;, &#39;#4B0100&#39;]	
+    &quot;&quot;&quot;
+    check_key(palname)
+    return list(reversed(palette(palname)))
+
+      
+  
+
+
+
+
+
+
+
+
+set_palette(palname)
+
+
+
+
+  
+  
+      Check the palette name and set the palette
+
+Examples:
+    &gt;&gt;&gt; set_palette(&quot;budapest&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        148
+149
+150
+151
+152
+153
+154
+155def set_palette(palname):
+    &quot;&quot;&quot;Check the palette name and set the palette
+	Examples:
+		&gt;&gt;&gt; set_palette(&quot;budapest&quot;)
+
+    &quot;&quot;&quot;
+    check_key(palname)
+    rcParams[&#39;axes.prop_cycle&#39;] = cycler.cycler(color=palettes[palname])
+
+      
+  
+
+
+
+
+
+
+
+
+view_palette(*args)
+
+
+
+
+  
+  
+      Display the palette.
+
+  Raises:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+                NotImplementedError
+          
+          An error occurs when palette not specified or not valid.   
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; view_palette(&quot;budapest&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186def view_palette(*args):
+    &quot;&quot;&quot;Display the palette.
+	Raises:
+		NotImplementedError: An error occurs when palette not specified or not valid.	
+	Examples:
+		&gt;&gt;&gt; view_palette(&quot;budapest&quot;)
+    &quot;&quot;&quot;
+    if len(args) &gt; 1:
+        f, ax = plt.subplots(1, len(args), figsize=(3 * len(args), 3))
+        for i, name in enumerate(args):
+            check_key(name)
+            cycle = palettes[name]
+            for j, c in enumerate(cycle):
+                ax[i].hlines(j, 0, 1, colors=c, linewidth=15)
+            ax[i].set_title(name)
+            despine(ax[i], True)
+        plt.show()
+    elif len(args) == 1:
+        f = plt.figure(figsize=(3, 3))
+        check_key(args[0])
+        cycle = palettes[args[0]]
+        for j, c in enumerate(cycle):
+            plt.hlines(j, 0, 1, colors=c, linewidth=15)
+        plt.title(args[0])
+        despine(plt.axes(), True)
+        f.tight_layout()
+        plt.show()
+    else:
+        raise NotImplementedError(&quot;ERROR: supply a palette to plot. check wes_palette.available() for available palettes&quot;)
+
+      
+  
+
+
+
+
+
+  
+
+  
+
+
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.despine" class="md-nav__link">
+    despine()
+  </a>
+  
+    <nav class="md-nav" aria-label="despine()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.despine--despineax-true" class="md-nav__link">
+    &gt;&gt;&gt; despine(ax, True)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.font_size" class="md-nav__link">
+    font_size()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.palette" class="md-nav__link">
+    palette()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse" class="md-nav__link">
+    reverse()
+  </a>
+  
+    <nav class="md-nav" aria-label="reverse()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse--reversebudapest" class="md-nav__link">
+    &gt;&gt;&gt; reverse("budapest")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse--d8aa88-c76b4f-806150-4e1042-900403-4b0100" class="md-nav__link">
+    ['#D8AA88', '#C76B4F', '#806150', '#4E1042', '#900403', '#4B0100']
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.set_palette" class="md-nav__link">
+    set_palette()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.view_palette" class="md-nav__link">
+    view_palette()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette" class="md-nav__link">
+    wes_palette.wes_palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.available" class="md-nav__link">
+    available()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.check_key" class="md-nav__link">
+    check_key()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap" class="md-nav__link">
+    cmap()
+  </a>
+  
+    <nav class="md-nav" aria-label="cmap()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap--cmapmegasaki" class="md-nav__link">
+    &gt;&gt;&gt; cmap("megasaki")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.cmap--_1" class="md-nav__link">
+    
+
+
+
+
+
+  
+  
+      Provide several color palettes for matplotlib.
+This module allows the user to easily change default color palettes in matplotlib.
+This module contains the followinng functions:
+
+'available(show=True)' - Returns a visual of all available color palettes.
+'check_key(palname)' - Check if palette name is in available palettes
+'cmap(palname)' - Return matplotlib color map of palette
+'despine(ax, all=False)' - Removes axis labels from graph
+'font_size(s)' - Set font size
+'palette(palname=None)' - Return all palettes if no palname; otherwise check and return palname from palette
+'reverse(palname)' -  Reverse color order
+'set_palette(palname)' - Set palette
+'view_palette(*args)' - View color palette
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+available(show=True)
+
+
+
+
+  
+  
+      Output graphs of all available color palettes.
+
+      
+        Source code in wes_palette/wes_palette.py
+        46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60def available(show=True):
+    &quot;&quot;&quot;Output graphs of all available color palettes.&quot;&quot;&quot;
+    if not show:
+        return palettes.keys()
+    else:
+        f, ax = plt.subplots(5, 2, figsize=(5, 8))
+        for i, name in enumerate(palettes.keys()):
+            x, y = i // 2, i % 2
+            cycle = palettes[name]
+            for j, c in enumerate(cycle):
+                ax[x, y].hlines(j, 0, 1, colors=c, linewidth=15)
+            ax[x, y].set_ylim(-1, len(cycle))
+            ax[x, y].set_title(name)
+            despine(ax[x, y], True)
+        plt.show()
+
+      
+  
+
+
+
+
+
+
+
+
+check_key(palname)
+
+
+
+
+  
+  
+      Check if palette is in palette list.
+
+  Parameters:
+  
+    
+      
+        Name
+        Type
+        Description
+        Default
+      
+    
+    
+        
+          palname
+          
+          
+          palette name
+          
+              required
+          
+        
+    
+  
+
+  Raises:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+                KeyError
+          
+          An error occurs when the palette name is new.
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; check_key(&quot;megasaki&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79def check_key(palname):
+    &quot;&quot;&quot;Check if palette is in palette list.
+	Args:
+		palname: palette name
+	Raises:
+		KeyError: An error occurs when the palette name is new.
+	Examples:
+		&gt;&gt;&gt; check_key(&quot;megasaki&quot;)
+
+    &quot;&quot;&quot;
+
+    try:
+        palettes[palname]
+    except KeyError:
+        raise KeyError(
+            &quot;{} not an accepted palette name. Check vapeplot.available() for available palettes&quot;.format(palname)
+        )
+
+      
+  
+
+
+
+
+
+
+
+
+cmap(palname)
+
+
+
+
+  
+  
+      Check if palette is vaild and make a colormap from it.
+
+  Parameters:
+  
+    
+      
+        Name
+        Type
+        Description
+        Default
+      
+    
+    
+        
+          palname
+          
+          
+          palette name 
+          
+              required
+          
+        
+    
+  
+
+  Returns:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+          
+          matplotlib colormap
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; cmap("megasaki")
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94def cmap(palname):
+    &quot;&quot;&quot;Check if palette is vaild and make a colormap from it.
+	Args:
+		palname: palette name 
+	Returns:
+		matplotlib colormap
+	Examples:
+		#&gt;&gt;&gt; cmap(&quot;megasaki&quot;)
+		#&lt;matplotlib.colors.ListedColormap object at &gt; 
+    &quot;&quot;&quot;
+
+    check_key(palname)
+    return matplotlib.colors.ListedColormap(palettes[palname])
+
+      
+  
+
+
+
+
+
+
+
+
+despine(ax, all=False)
+
+
+
+
+  
+  
+      Remove axis labels from graph.
+
+Examples:
+    &gt;&gt;&gt; despine(ax, True)
+
+      
+        Source code in wes_palette/wes_palette.py
+         97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112def despine(ax, all=False):
+    &quot;&quot;&quot;Remove axis labels from graph.
+	Examples:
+		#&gt;&gt;&gt; despine(ax, True)
+
+    &quot;&quot;&quot;
+    if all is True:
+        for sp in ax.spines:
+            ax.spines[sp].set_visible(False)
+        ax.get_xaxis().set_visible(False)
+        ax.get_yaxis().set_visible(False)
+    else:
+        ax.spines[&#39;top&#39;].set_visible(False)
+        ax.spines[&#39;right&#39;].set_visible(False)
+        ax.get_xaxis().tick_bottom()
+        ax.get_yaxis().tick_left()
+
+      
+  
+
+
+
+
+
+
+
+
+font_size(s)
+
+
+
+
+  
+  
+      Set font size.i
+
+Examples:
+    &gt;&gt;&gt; font_size(11)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        115
+116
+117
+118
+119
+120
+121def font_size(s):
+    &quot;&quot;&quot;Set font size.i
+	Examples:
+		&gt;&gt;&gt; font_size(11)
+
+    &quot;&quot;&quot;
+    matplotlib.rcParams.update({&#39;font.size&#39;: s})
+
+      
+  
+
+
+
+
+
+
+
+
+palette(palname=None)
+
+
+
+
+  
+  
+      If no argument, return list of palettes. 
+Otherwise check the palette name and return the palette.
+ Examples:
+         &gt;&gt;&gt; palette()
+         {'megasaki': ['#aa82a7', '#9d2f28', '#deb867', '#e3ced3', '#948580', '#110d0e'], 'budapest': ['#4B0100', '#900403', '#4E1042', '#806150', '#C76B4F', '#D8AA88'], 'kingdom': ['#195B4E', '#617337', '#B1A16A', '#E1D06E', '#C99A6B', '#B27B7F'], 'darjeeling': ['#0D6CE8', '#8ACAF0', '#ABBBC7', '#687075', '#3B5657', '#B45E3B'], 'tenenbaums': ['#a7ba42', '#95ccba', '#ffdede', '#fff0cb', '#f2cc84'], 'tracy': ['#eaa2b6', '#e7cbaf', '#e0bd59', '#292176'], 'dispatch': ['#1f5c89', '#72a87c', '#c0bc78', '#ce784b'], 'darjeeling2': ['#ffe959', '#b5b867', '#b7dbdb', '#6ba08f', '#345b8e'], 'fantasticfox': ['#4baecb', '#e4d405', '#df8818', '#b40c24', '#272121'], 'mendls': ['#3a0202', '#a03558', '#b25d55', '#7896d7', '#dc90b5', '#e0e2f4']}
+
+      
+        Source code in wes_palette/wes_palette.py
+        124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135def palette(palname=None):
+    &quot;&quot;&quot;If no argument, return list of palettes. 
+       Otherwise check the palette name and return the palette.
+	Examples:
+		&gt;&gt;&gt; palette()
+		{&#39;megasaki&#39;: [&#39;#aa82a7&#39;, &#39;#9d2f28&#39;, &#39;#deb867&#39;, &#39;#e3ced3&#39;, &#39;#948580&#39;, &#39;#110d0e&#39;], &#39;budapest&#39;: [&#39;#4B0100&#39;, &#39;#900403&#39;, &#39;#4E1042&#39;, &#39;#806150&#39;, &#39;#C76B4F&#39;, &#39;#D8AA88&#39;], &#39;kingdom&#39;: [&#39;#195B4E&#39;, &#39;#617337&#39;, &#39;#B1A16A&#39;, &#39;#E1D06E&#39;, &#39;#C99A6B&#39;, &#39;#B27B7F&#39;], &#39;darjeeling&#39;: [&#39;#0D6CE8&#39;, &#39;#8ACAF0&#39;, &#39;#ABBBC7&#39;, &#39;#687075&#39;, &#39;#3B5657&#39;, &#39;#B45E3B&#39;], &#39;tenenbaums&#39;: [&#39;#a7ba42&#39;, &#39;#95ccba&#39;, &#39;#ffdede&#39;, &#39;#fff0cb&#39;, &#39;#f2cc84&#39;], &#39;tracy&#39;: [&#39;#eaa2b6&#39;, &#39;#e7cbaf&#39;, &#39;#e0bd59&#39;, &#39;#292176&#39;], &#39;dispatch&#39;: [&#39;#1f5c89&#39;, &#39;#72a87c&#39;, &#39;#c0bc78&#39;, &#39;#ce784b&#39;], &#39;darjeeling2&#39;: [&#39;#ffe959&#39;, &#39;#b5b867&#39;, &#39;#b7dbdb&#39;, &#39;#6ba08f&#39;, &#39;#345b8e&#39;], &#39;fantasticfox&#39;: [&#39;#4baecb&#39;, &#39;#e4d405&#39;, &#39;#df8818&#39;, &#39;#b40c24&#39;, &#39;#272121&#39;], &#39;mendls&#39;: [&#39;#3a0202&#39;, &#39;#a03558&#39;, &#39;#b25d55&#39;, &#39;#7896d7&#39;, &#39;#dc90b5&#39;, &#39;#e0e2f4&#39;]}
+    &quot;&quot;&quot;
+    if palname is None:
+        return palettes
+    else:
+        check_key(palname)
+        return palettes[palname]
+
+      
+  
+
+
+
+
+
+
+
+
+reverse(palname)
+
+
+
+
+  
+  
+      Reverse color order of specfied palette.
+
+Examples:
+    &gt;&gt;&gt; reverse("budapest")
+['#D8AA88', '#C76B4F', '#806150', '#4E1042', '#900403', '#4B0100']
+
+      
+        Source code in wes_palette/wes_palette.py
+        138
+139
+140
+141
+142
+143
+144
+145def reverse(palname):
+    &quot;&quot;&quot;Reverse color order of specfied palette.
+	Examples:
+		#&gt;&gt;&gt; reverse(&quot;budapest&quot;)
+		#[&#39;#D8AA88&#39;, &#39;#C76B4F&#39;, &#39;#806150&#39;, &#39;#4E1042&#39;, &#39;#900403&#39;, &#39;#4B0100&#39;]	
+    &quot;&quot;&quot;
+    check_key(palname)
+    return list(reversed(palette(palname)))
+
+      
+  
+
+
+
+
+
+
+
+
+set_palette(palname)
+
+
+
+
+  
+  
+      Check the palette name and set the palette
+
+Examples:
+    &gt;&gt;&gt; set_palette(&quot;budapest&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        148
+149
+150
+151
+152
+153
+154
+155def set_palette(palname):
+    &quot;&quot;&quot;Check the palette name and set the palette
+	Examples:
+		&gt;&gt;&gt; set_palette(&quot;budapest&quot;)
+
+    &quot;&quot;&quot;
+    check_key(palname)
+    rcParams[&#39;axes.prop_cycle&#39;] = cycler.cycler(color=palettes[palname])
+
+      
+  
+
+
+
+
+
+
+
+
+view_palette(*args)
+
+
+
+
+  
+  
+      Display the palette.
+
+  Raises:
+  
+    
+      
+        Type
+        Description
+      
+    
+    
+        
+          
+                NotImplementedError
+          
+          An error occurs when palette not specified or not valid.   
+        
+    
+  
+
+Examples:
+    &gt;&gt;&gt; view_palette(&quot;budapest&quot;)
+
+
+      
+        Source code in wes_palette/wes_palette.py
+        158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186def view_palette(*args):
+    &quot;&quot;&quot;Display the palette.
+	Raises:
+		NotImplementedError: An error occurs when palette not specified or not valid.	
+	Examples:
+		&gt;&gt;&gt; view_palette(&quot;budapest&quot;)
+    &quot;&quot;&quot;
+    if len(args) &gt; 1:
+        f, ax = plt.subplots(1, len(args), figsize=(3 * len(args), 3))
+        for i, name in enumerate(args):
+            check_key(name)
+            cycle = palettes[name]
+            for j, c in enumerate(cycle):
+                ax[i].hlines(j, 0, 1, colors=c, linewidth=15)
+            ax[i].set_title(name)
+            despine(ax[i], True)
+        plt.show()
+    elif len(args) == 1:
+        f = plt.figure(figsize=(3, 3))
+        check_key(args[0])
+        cycle = palettes[args[0]]
+        for j, c in enumerate(cycle):
+            plt.hlines(j, 0, 1, colors=c, linewidth=15)
+        plt.title(args[0])
+        despine(plt.axes(), True)
+        f.tight_layout()
+        plt.show()
+    else:
+        raise NotImplementedError(&quot;ERROR: supply a palette to plot. check wes_palette.available() for available palettes&quot;)
+
+      
+  
+
+
+
+
+
+  
+
+  
+
+
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.despine" class="md-nav__link">
+    despine()
+  </a>
+  
+    <nav class="md-nav" aria-label="despine()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.despine--despineax-true" class="md-nav__link">
+    &gt;&gt;&gt; despine(ax, True)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.font_size" class="md-nav__link">
+    font_size()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.palette" class="md-nav__link">
+    palette()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse" class="md-nav__link">
+    reverse()
+  </a>
+  
+    <nav class="md-nav" aria-label="reverse()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse--reversebudapest" class="md-nav__link">
+    &gt;&gt;&gt; reverse("budapest")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.reverse--d8aa88-c76b4f-806150-4e1042-900403-4b0100" class="md-nav__link">
+    ['#D8AA88', '#C76B4F', '#806150', '#4E1042', '#900403', '#4B0100']
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.set_palette" class="md-nav__link">
+    set_palette()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wes_palette.wes_palette.view_palette" class="md-nav__link">
+    view_palette()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Reference</h1>
+
+<p>This part of the project documentation focuses on
+an <strong>information-oriented</strong> approach. Use it as a
+reference for the technical implementation of the
+'wes_palette' project code.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="wes_palette.wes_palette"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Provide several color palettes for matplotlib.
+This module allows the user to easily change default color palettes in matplotlib.</p>
+<p>This module contains the followinng functions:</p>
+<ul>
+<li>'available(show=True)' - Returns a visual of all available color palettes.</li>
+<li>'check_key(palname)' - Check if palette name is in available palettes</li>
+<li>'cmap(palname)' - Return matplotlib color map of palette</li>
+<li>'despine(ax, all=False)' - Removes axis labels from graph</li>
+<li>'font_size(s)' - Set font size</li>
+<li>'palette(palname=None)' - Return all palettes if no palname; otherwise check and return palname from palette</li>
+<li>'reverse(palname)' -  Reverse color order</li>
+<li>'set_palette(palname)' - Set palette</li>
+<li>'view_palette(*args)' - View color palette</li>
+</ul>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.available" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">available</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Output graphs of all available color palettes.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">available</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Output graphs of all available color palettes.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">show</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">palettes</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">palettes</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+            <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">i</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span>
+            <span class="n">cycle</span> <span class="o">=</span> <span class="n">palettes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+                <span class="n">ax</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span><span class="o">.</span><span class="n">hlines</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+            <span class="n">ax</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cycle</span><span class="p">))</span>
+            <span class="n">ax</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">despine</span><span class="p">(</span><span class="n">ax</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.check_key" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Check if palette is in palette list.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>palname</code></td>
+          <td>
+          </td>
+          <td><p>palette name</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>KeyError</code>
+          </td>
+          <td><p>An error occurs when the palette name is new.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">check_key</span><span class="p">(</span><span class="s2">&quot;megasaki&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if palette is in palette list.</span>
+<span class="sd">	Args:</span>
+<span class="sd">		palname: palette name</span>
+<span class="sd">	Raises:</span>
+<span class="sd">		KeyError: An error occurs when the palette name is new.</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		&gt;&gt;&gt; check_key(&quot;megasaki&quot;)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">palettes</span><span class="p">[</span><span class="n">palname</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span>
+            <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> not an accepted palette name. Check vapeplot.available() for available palettes&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span>
+        <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.cmap" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">cmap</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Check if palette is vaild and make a colormap from it.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>palname</code></td>
+          <td>
+          </td>
+          <td><p>palette name </p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+          </td>
+          <td><p>matplotlib colormap</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <h3 id="wes_palette.wes_palette.cmap--cmapmegasaki">&gt;&gt;&gt; cmap("megasaki")</h3>
+<h3 id="wes_palette.wes_palette.cmap--_1"><matplotlib.colors.ListedColormap object at ></h3>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cmap</span><span class="p">(</span><span class="n">palname</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if palette is vaild and make a colormap from it.</span>
+<span class="sd">	Args:</span>
+<span class="sd">		palname: palette name </span>
+<span class="sd">	Returns:</span>
+<span class="sd">		matplotlib colormap</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		#&gt;&gt;&gt; cmap(&quot;megasaki&quot;)</span>
+<span class="sd">		#&lt;matplotlib.colors.ListedColormap object at &gt; </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">ListedColormap</span><span class="p">(</span><span class="n">palettes</span><span class="p">[</span><span class="n">palname</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.despine" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">despine</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Remove axis labels from graph.</p>
+
+<p><strong>Examples:</strong></p>
+    <h3 id="wes_palette.wes_palette.despine--despineax-true">&gt;&gt;&gt; despine(ax, True)</h3>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">despine</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Remove axis labels from graph.</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		#&gt;&gt;&gt; despine(ax, True)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">all</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">sp</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="n">sp</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">tick_bottom</span><span class="p">()</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">tick_left</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.font_size" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">font_size</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Set font size.i</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">font_size</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">font_size</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set font size.i</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		&gt;&gt;&gt; font_size(11)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="n">s</span><span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.palette" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">palette</span><span class="p">(</span><span class="n">palname</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>If no argument, return list of palettes. 
+Otherwise check the palette name and return the palette.
+ Examples:
+         &gt;&gt;&gt; palette()
+         {'megasaki': ['#aa82a7', '#9d2f28', '#deb867', '#e3ced3', '#948580', '#110d0e'], 'budapest': ['#4B0100', '#900403', '#4E1042', '#806150', '#C76B4F', '#D8AA88'], 'kingdom': ['#195B4E', '#617337', '#B1A16A', '#E1D06E', '#C99A6B', '#B27B7F'], 'darjeeling': ['#0D6CE8', '#8ACAF0', '#ABBBC7', '#687075', '#3B5657', '#B45E3B'], 'tenenbaums': ['#a7ba42', '#95ccba', '#ffdede', '#fff0cb', '#f2cc84'], 'tracy': ['#eaa2b6', '#e7cbaf', '#e0bd59', '#292176'], 'dispatch': ['#1f5c89', '#72a87c', '#c0bc78', '#ce784b'], 'darjeeling2': ['#ffe959', '#b5b867', '#b7dbdb', '#6ba08f', '#345b8e'], 'fantasticfox': ['#4baecb', '#e4d405', '#df8818', '#b40c24', '#272121'], 'mendls': ['#3a0202', '#a03558', '#b25d55', '#7896d7', '#dc90b5', '#e0e2f4']}</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">palette</span><span class="p">(</span><span class="n">palname</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;If no argument, return list of palettes. </span>
+<span class="sd">       Otherwise check the palette name and return the palette.</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		&gt;&gt;&gt; palette()</span>
+<span class="sd">		{&#39;megasaki&#39;: [&#39;#aa82a7&#39;, &#39;#9d2f28&#39;, &#39;#deb867&#39;, &#39;#e3ced3&#39;, &#39;#948580&#39;, &#39;#110d0e&#39;], &#39;budapest&#39;: [&#39;#4B0100&#39;, &#39;#900403&#39;, &#39;#4E1042&#39;, &#39;#806150&#39;, &#39;#C76B4F&#39;, &#39;#D8AA88&#39;], &#39;kingdom&#39;: [&#39;#195B4E&#39;, &#39;#617337&#39;, &#39;#B1A16A&#39;, &#39;#E1D06E&#39;, &#39;#C99A6B&#39;, &#39;#B27B7F&#39;], &#39;darjeeling&#39;: [&#39;#0D6CE8&#39;, &#39;#8ACAF0&#39;, &#39;#ABBBC7&#39;, &#39;#687075&#39;, &#39;#3B5657&#39;, &#39;#B45E3B&#39;], &#39;tenenbaums&#39;: [&#39;#a7ba42&#39;, &#39;#95ccba&#39;, &#39;#ffdede&#39;, &#39;#fff0cb&#39;, &#39;#f2cc84&#39;], &#39;tracy&#39;: [&#39;#eaa2b6&#39;, &#39;#e7cbaf&#39;, &#39;#e0bd59&#39;, &#39;#292176&#39;], &#39;dispatch&#39;: [&#39;#1f5c89&#39;, &#39;#72a87c&#39;, &#39;#c0bc78&#39;, &#39;#ce784b&#39;], &#39;darjeeling2&#39;: [&#39;#ffe959&#39;, &#39;#b5b867&#39;, &#39;#b7dbdb&#39;, &#39;#6ba08f&#39;, &#39;#345b8e&#39;], &#39;fantasticfox&#39;: [&#39;#4baecb&#39;, &#39;#e4d405&#39;, &#39;#df8818&#39;, &#39;#b40c24&#39;, &#39;#272121&#39;], &#39;mendls&#39;: [&#39;#3a0202&#39;, &#39;#a03558&#39;, &#39;#b25d55&#39;, &#39;#7896d7&#39;, &#39;#dc90b5&#39;, &#39;#e0e2f4&#39;]}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">palname</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">palettes</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">palettes</span><span class="p">[</span><span class="n">palname</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.reverse" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">reverse</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Reverse color order of specfied palette.</p>
+
+<p><strong>Examples:</strong></p>
+    <h3 id="wes_palette.wes_palette.reverse--reversebudapest">&gt;&gt;&gt; reverse("budapest")</h3>
+<h3 id="wes_palette.wes_palette.reverse--d8aa88-c76b4f-806150-4e1042-900403-4b0100">['#D8AA88', '#C76B4F', '#806150', '#4E1042', '#900403', '#4B0100']</h3>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">palname</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Reverse color order of specfied palette.</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		#&gt;&gt;&gt; reverse(&quot;budapest&quot;)</span>
+<span class="sd">		#[&#39;#D8AA88&#39;, &#39;#C76B4F&#39;, &#39;#806150&#39;, &#39;#4E1042&#39;, &#39;#900403&#39;, &#39;#4B0100&#39;]	</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">palette</span><span class="p">(</span><span class="n">palname</span><span class="p">)))</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.set_palette" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">set_palette</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Check the palette name and set the palette</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">set_palette</span><span class="p">(</span><span class="s2">&quot;budapest&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_palette</span><span class="p">(</span><span class="n">palname</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check the palette name and set the palette</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		&gt;&gt;&gt; set_palette(&quot;budapest&quot;)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">check_key</span><span class="p">(</span><span class="n">palname</span><span class="p">)</span>
+    <span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="o">.</span><span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">palettes</span><span class="p">[</span><span class="n">palname</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="wes_palette.wes_palette.view_palette" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">view_palette</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Display the palette.</p>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>NotImplementedError</code>
+          </td>
+          <td><p>An error occurs when palette not specified or not valid.   </p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">view_palette</span><span class="p">(</span><span class="s2">&quot;budapest&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>wes_palette/wes_palette.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">view_palette</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Display the palette.</span>
+<span class="sd">	Raises:</span>
+<span class="sd">		NotImplementedError: An error occurs when palette not specified or not valid.	</span>
+<span class="sd">	Examples:</span>
+<span class="sd">		&gt;&gt;&gt; view_palette(&quot;budapest&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">),</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+            <span class="n">check_key</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">cycle</span> <span class="o">=</span> <span class="n">palettes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+                <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">hlines</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+            <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">despine</span><span class="p">(</span><span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+        <span class="n">check_key</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">cycle</span> <span class="o">=</span> <span class="n">palettes</span><span class="p">[</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">hlines</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">despine</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(),</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;ERROR: supply a palette to plot. check wes_palette.available() for available palettes&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c2be25ad.min.js"></script>
+      
+    
+  </body>
+</html>
