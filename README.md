@@ -9,7 +9,7 @@
 
 
 
-wes-palette is a Wes Anderson film color palettes for matplotlib based on [vapeplot](https://github.com/dantaki/vapeplot)
+wes-palette is a collection of Wes Anderson film color palettes for matplotlib based on [vapeplot](https://github.com/dantaki/vapeplot)
 
 ## Installation
 
