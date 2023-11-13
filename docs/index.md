@@ -1,5 +1,5 @@
-This site contains the project documentation for the 'wes_palette' project, which aaims to improve the experience of using and choosing color palettes when using matplotlib.
-It's aim is to give you a selection of aesthetic color options for your graphs, choosen from varios Wes Anderson films.
+This site contains the project documentation for the 'wes_palette' project, which aims to improve the experience of using and choosing color palettes when using matplotlib to visualize data.
+It gives you to option to selection from a variety of aesthetic color options for your graphs, choosen from Wes Anderson films.
 
 ## Project Overview
 
